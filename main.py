@@ -6,7 +6,6 @@
 
 import telebot
 import random
-from background import keep_alive
 
 bot = telebot.TeleBot('5647150747:AAF_-ztxizqAbOBhb3uEtAq9wrj1LefHZT4')
 
@@ -1681,7 +1680,6 @@ def hidenewfqs(message):
     print(len(array))
 
 
-keep_alive()
 bot.polling(none_stop=True, interval=0)
 
 ### * Copyright Chuchin Dmitriy Maksimovich - All Rights Reserved
