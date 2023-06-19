@@ -40,9 +40,9 @@ def register(message):
   def directionboy(message):
     data = message.text
     file = open('boys_datas.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     file1 = open('datas.txt', 'a+', encoding='utf-8')
-    file1.write(str(data) + '\n')
+    file1.write('\n' + str(data))
     list_of = open('list_off.png', 'rb')
     bot.send_photo(message.chat.id, list_of)
     bot.send_message(
@@ -64,7 +64,7 @@ def register(message):
     @bot.message_handler(commands=['educationdirectionboy'])
     def educationdirectionboy(message):
       file1 = open('education_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -90,7 +90,7 @@ def register(message):
     @bot.message_handler(commands=['sciencedirectionboy'])
     def sciencedirectionboy(message):
       file1 = open('science_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -116,7 +116,7 @@ def register(message):
     @bot.message_handler(commands=['professiondirectionboy'])
     def professiondirectionboy(message):
       file1 = open('profession_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -142,7 +142,7 @@ def register(message):
     @bot.message_handler(commands=['culturedirectionboy'])
     def culturedirectionboy(message):
       file1 = open('culture_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -168,7 +168,7 @@ def register(message):
     @bot.message_handler(commands=['volunteerdirectionboy'])
     def volunteerdirectionboy(message):
       file1 = open('volunteer_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -194,7 +194,7 @@ def register(message):
     @bot.message_handler(commands=['patriotismdirectionboy'])
     def patriotismdirectionboy(message):
       file1 = open('patriotism_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -220,7 +220,7 @@ def register(message):
     @bot.message_handler(commands=['sportdirectionboy'])
     def sportdirectionboy(message):
       file1 = open('sport_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -246,7 +246,7 @@ def register(message):
     @bot.message_handler(commands=['healthyhealthdirectionboy'])
     def healthyhealthdirectionboy(message):
       file1 = open('healthyhealth_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -272,7 +272,7 @@ def register(message):
     @bot.message_handler(commands=['mediadirectionboy'])
     def mediadirectionboy(message):
       file1 = open('media_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -298,7 +298,7 @@ def register(message):
     @bot.message_handler(commands=['diplomacydirectionboy'])
     def diplomacydirectionboy(message):
       file1 = open('diplomacy_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -324,7 +324,7 @@ def register(message):
     @bot.message_handler(commands=['ecologydirectionboy'])
     def ecologydirectionboy(message):
       file1 = open('ecology_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -350,7 +350,7 @@ def register(message):
     @bot.message_handler(commands=['tourismdirectionboy'])
     def tourismdirectionboy(message):
       file1 = open('tourism_direction_boy.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -384,9 +384,9 @@ def register(message):
   def directiongirl(message):
     data = message.text
     file = open('girls_datas.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     file1 = open('datas.txt', 'a+', encoding='utf-8')
-    file1.write(str(data) + '\n')
+    file1.write('\n' + str(data))
     list_of = open('list_off.png', 'rb')
     bot.send_photo(message.chat.id, list_of)
     bot.send_message(
@@ -409,7 +409,7 @@ def register(message):
     @bot.message_handler(commands=['educationdirectiongirl'])
     def educationdirectiongirl(message):
       file1 = open('education_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -435,7 +435,7 @@ def register(message):
     @bot.message_handler(commands=['sciencedirectiongirl'])
     def sciencedirectiongirl(message):
       file1 = open('science_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -461,7 +461,7 @@ def register(message):
     @bot.message_handler(commands=['professiondirectiongirl'])
     def professiondirectiongirl(message):
       file1 = open('profession_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -487,7 +487,7 @@ def register(message):
     @bot.message_handler(commands=['culturedirectiongirl'])
     def culturedirectiongirl(message):
       file1 = open('culture_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -513,7 +513,7 @@ def register(message):
     @bot.message_handler(commands=['volunteerdirectiongirl'])
     def volunteerdirectiongirl(message):
       file1 = open('volunteer_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -539,7 +539,7 @@ def register(message):
     @bot.message_handler(commands=['patriotismdirectiongirl'])
     def patriotismdirectiongirl(message):
       file1 = open('patriotism_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -565,7 +565,7 @@ def register(message):
     @bot.message_handler(commands=['sportdirectiongirl'])
     def sportdirectiongirl(message):
       file1 = open('sport_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -591,7 +591,7 @@ def register(message):
     @bot.message_handler(commands=['healthyhealthdirectiongirl'])
     def healthyhealthdirectiongirl(message):
       file1 = open('healthyhealth_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -617,7 +617,7 @@ def register(message):
     @bot.message_handler(commands=['mediadirectiongirl'])
     def mediadirectiongirl(message):
       file1 = open('media_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -643,7 +643,7 @@ def register(message):
     @bot.message_handler(commands=['diplomacydirectiongirl'])
     def diplomacydirectiongirl(message):
       file1 = open('diplomacy_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -669,7 +669,7 @@ def register(message):
     @bot.message_handler(commands=['ecologydirectiongirl'])
     def ecologydirectiongirl(message):
       file1 = open('ecology_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -695,7 +695,7 @@ def register(message):
     @bot.message_handler(commands=['tourismdirectiongirl'])
     def tourismdirectiongirl(message):
       file1 = open('tourism_direction_girl.txt', 'a+', encoding='utf-8')
-      file1.write(str(data) + '\n')
+      file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
       file2.write(str(message.from_user.username) + '\n')
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
@@ -1192,7 +1192,7 @@ def createfq1(message):
                     \n\nДля открытия этого меню - /menu')
   else:
     file = open('new_fqs.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(message.chat.id,
                      'Готово! Скоро твой вопрос появится в списке!')
 
@@ -1316,7 +1316,7 @@ def edit_data(message):
   def edit_nickname1(message):
     data = message.text
     file = open('edit_nickname.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(
       message.chat.id,
       'Готово, после недолгой модерации твоё имя пользователя поменяется!\
@@ -1333,7 +1333,7 @@ def edit_data(message):
   def edit_name1(message):
     data = message.text
     file = open('edit_name.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(
       message.chat.id, 'Готово, после недолгой модерации твоё имя поменяется!\
                       \n\nДля возврата в меню - /menu')
@@ -1349,7 +1349,7 @@ def edit_data(message):
   def edit_about1(message):
     data = message.text
     file = open('edit_about.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(
       message.chat.id,
       'Готово, после недолгой модерации данные о тебе поменяются!\
@@ -1366,7 +1366,7 @@ def edit_data(message):
   def edit_direction1(message):
     data = message.text
     file = open('edit_direction.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(
       message.chat.id,
       'Готово, после недолгой модерации твои направления поменяются!\
@@ -1398,7 +1398,7 @@ def create_extra_profile1(message):
                     \n\nДля открытия этого меню - /menu')
   else:
     file = open('extra_profiles.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(
       message.chat.id,
       'Круто! Скоро твой профиль обновится! Если появятся какие-то вопросы, мы тебе напишем.'
@@ -1439,7 +1439,7 @@ def createadsrequest(message):
 def createadsrequest2(message):
   data = message.text
   file = open('das_requests.txt', 'a+', encoding='utf-8')
-  file.write(str(data) + '\n')
+  file.write('\n' + str(data))
   username = bot.send_message(
     messgae.chat.id,
     'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
@@ -1450,7 +1450,7 @@ def createadsrequest2(message):
 def createadsrequest3(message):
   data = message.text
   file = open('ads_request.txt', 'a+', encoding='utf-8')
-  file.write(str(data) + '\n')
+  file.write('\n' + str(data))
   thought = bot.send_message(
     message.chat.id,
     'В следующем сообщении опиши свой проект - напиши название, суть и т.д.\nДля возврата в меню - /menu'
@@ -1461,7 +1461,7 @@ def createadsrequest3(message):
 def createadsrequest4(message):
   data = message.text
   file = open('ads_requests.txt', 'a+', encoding='utf-8')
-  file.write(str(data) + '\n')
+  file.write('\n' + str(data))
   username = bot.send_message(
     message.chat.id,
     'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
@@ -1493,7 +1493,7 @@ def createbugreport2(message):
                     \n\nДля открытия этого меню - /menu')
   else:
     file = open('bug_reports.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     username = bot.send_message(
       message.chat.id,
       'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
@@ -1517,7 +1517,7 @@ def createbugreport3(message):
                     \n\nДля открытия этого меню - /menu')
   else:
     file = open('bug_reports.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bug = bot.send_message(
       message.chat.id,
       'В следующем сообщении опиши ошибку.\nДля возврата в меню - /menu')
@@ -1540,7 +1540,7 @@ def createbugreport4(message):
                     \n\nДля открытия этого меню - /menu')
   else:
     file = open('bug_reports.txt', 'a+', encoding='utf-8')
-    file.write(str(data) + '\n')
+    file.write('\n' + str(data))
     bot.send_message(
       message.chat.id,
       'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
