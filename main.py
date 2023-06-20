@@ -1438,7 +1438,7 @@ def createadsrequest(message):
 
 def createadsrequest2(message):
   data = message.text
-  file = open('das_requests.txt', 'a+', encoding='utf-8')
+  file = open('ads_requests.txt', 'a+', encoding='utf-8')
   file.write('\n' + str(data))
   username = bot.send_message(
     messgae.chat.id,
