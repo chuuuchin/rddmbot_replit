@@ -78,7 +78,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -104,7 +103,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -130,7 +128,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -156,7 +153,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -182,7 +178,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -208,7 +203,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -234,7 +228,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -260,7 +253,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -286,7 +278,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -312,7 +303,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -338,7 +328,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -364,7 +353,6 @@ def register(message):
         'Готово, ты зарегистрирован! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -423,7 +411,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -449,7 +436,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -475,7 +461,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -501,7 +486,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -527,7 +511,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -553,7 +536,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -579,7 +561,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -605,7 +586,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -631,7 +611,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -657,7 +636,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -683,7 +661,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -709,7 +686,6 @@ def register(message):
         'Готово, ты зарегистрирована! Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -731,7 +707,6 @@ def login(message):
         message.chat.id, 'Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nИнформация о съездах и т.д. - /meetout\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
@@ -1178,23 +1153,10 @@ def createfq(message):
 
 def createfq1(message):
   data = message.text
-  if data == '/menu':
-    bot.send_message(
-      message.chat.id, 'Выбирай, куда отправимся:\
-                    \nНовые знакомства - /newfriends\
-                    \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
-                    \nСсылки - /links\
-                    \nОбратная связь - /feedback\
-                    \nКонтакты - /contacts\
-                    \nИзменение данных о себе - /edit_data\
-                    \Больше команд в боковом меню!\
-                    \n\nДля открытия этого меню - /menu')
-  else:
-    file = open('new_fqs.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(message.chat.id,
-                     'Готово! Скоро твой вопрос появится в списке!')
+  file = open('new_fqs.txt', 'a+', encoding='utf-8')
+  file.write('\n' + str(data))
+  bot.send_message(message.chat.id,
+                   'Готово! Скоро твой вопрос появится в списке!')
 
 
 @bot.message_handler(commands=['info'])
@@ -1203,20 +1165,6 @@ def info(message):
     message.chat.id,
     'Проект бота был создан 7 марта 2023 года Чучиным Д. М. и Богдановым М. Ю. в качестве чат-бота для связи всего Движения.\n\n© Чучин Д. М., Богданов М. Ю., 2023'
   )
-
-
-@bot.message_handler(commands=['weeknews'])
-def weeknews(message):
-  bot.send_message(
-    message.chat.id,
-    'В этой сводке новостей ты сможешь ознакомиться со всеми событиями на этой неделе!\
-            \n\nЛаборатория путешествий объявляет о старте набора в БАЭ - БОЛЬШУЮ АРКТИЧЕСКУЮ ЭКСПЕДИЦИЮ – 2023! https://t.me/rddm_moscow/71804\
-            \n\nПроект "Надо поговорить" https://t.me/rddm_moscow/74595\
-            \n\nКонсультации команд Акселератора от экспертов https://t.me/rddm_moscow/74933\
-            \n\nПроект "Университетские смены" https://t.me/rddm_moscow/75800\
-            \n\nПрием заявок на федеральные смены «Содружество Орлят России» https://t.me/rddm_moscow/1/79873\
-            \n\nМедиацентр РДДМ Москва ищет талантливых видеографов https://t.me/rddm_moscow/1/79834\
-            \n\nДля возврата в меню - /menu')
 
 
 @bot.message_handler(commands=['links'])
@@ -1244,7 +1192,6 @@ def menu(message):
     message.chat.id, 'Выбирай, куда отправимся:\
                     \nНовые знакомства - /newfriends\
                     \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
                     \nСсылки - /links\
                     \nОбратная связь - /feedback\
                     \nКонтакты - /contacts\
@@ -1272,6 +1219,11 @@ def contacts(message):
                     \nИрада - @just_iradochka\
                     \nНадежда - @Googbeste\
                     \nАриша - @rinvilo\
+                    \n\nИ, конечно же, команда разработчиков бота:\
+                    \nДима - @chuuuchin\
+                    \nВика - @wisac\
+                    \nРегина - @rrrrrrega\
+                    \n\
                     \n\nДля возврата в меню - /menu')
 
 
@@ -1384,26 +1336,13 @@ def create_extra_profile(message):
 
 def create_extra_profile1(message):
   data = message.text
-  if data == '/menu':
-    bot.send_message(
-      message.chat.id, 'Выбирай, куда отправимся:\
-                    \nНовые знакомства - /newfriends\
-                    \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
-                    \nСсылки - /links\
-                    \nОбратная связь - /feedback\
-                    \nКонтакты - /contacts\
-                    \nИзменение данных о себе - /edit_data\
-                    \Больше команд в боковом меню!\
-                    \n\nДля открытия этого меню - /menu')
-  else:
-    file = open('extra_profiles.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(
-      message.chat.id,
-      'Круто! Скоро твой профиль обновится! Если появятся какие-то вопросы, мы тебе напишем.'
-    )
-    bot.send_message(6220998434, data)
+  file = open('extra_profiles.txt', 'a+', encoding='utf-8')
+  file.write('\n' + str(data))
+  bot.send_message(
+    message.chat.id,
+    'Круто! Скоро твой профиль обновится! Если появятся какие-то вопросы, мы тебе напишем.'
+  )
+  bot.send_message(6220998434, data)
 
 
 @bot.message_handler(commands=['ads'])
@@ -1479,72 +1418,33 @@ def createbugreport(message):
 
 def createbugreport2(message):
   data = message.text
-  if data == '/menu':
-    bot.send_message(
-      message.chat.id, 'Выбирай, куда отправимся:\
-                    \nНовые знакомства - /newfriends\
-                    \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
-                    \nСсылки - /links\
-                    \nОбратная связь - /feedback\
-                    \nКонтакты - /contacts\
-                    \nИзменение данных о себе - /edit_data\
-                    \Больше команд в боковом меню!\
-                    \n\nДля открытия этого меню - /menu')
-  else:
-    file = open('bug_reports.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    username = bot.send_message(
-      message.chat.id,
-      'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
-    )
-    bot.register_next_step_handler(username, createbugreport3)
+  file = open('bug_reports.txt', 'a+', encoding='utf-8')
+  file.write('\n' + str(data))
+  username = bot.send_message(
+    message.chat.id,
+    'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
+  )
+  bot.register_next_step_handler(username, createbugreport3)
 
 
 def createbugreport3(message):
   data = message.text
-  if data == '/menu':
-    bot.send_message(
-      message.chat.id, 'Выбирай, куда отправимся:\
-                    \nНовые знакомства - /newfriends\
-                    \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
-                    \nСсылки - /links\
-                    \nОбратная связь - /feedback\
-                    \nКонтакты - /contacts\
-                    \nИзменение данных о себе - /edit_data\
-                    \Больше команд в боковом меню!\
-                    \n\nДля открытия этого меню - /menu')
-  else:
-    file = open('bug_reports.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bug = bot.send_message(
-      message.chat.id,
-      'В следующем сообщении опиши ошибку.\nДля возврата в меню - /menu')
-    bot.register_next_step_handler(bug, createbugreport4)
+  file = open('bug_reports.txt', 'a+', encoding='utf-8')
+  file.write('\n' + str(data))
+  bug = bot.send_message(
+    message.chat.id,
+    'В следующем сообщении опиши ошибку.\nДля возврата в меню - /menu')
+  bot.register_next_step_handler(bug, createbugreport4)
 
 
 def createbugreport4(message):
   data = message.text
-  if data == '/menu':
-    bot.send_message(
-      message.chat.id, 'Выбирай, куда отправимся:\
-                    \nНовые знакомства - /newfriends\
-                    \nЧаВО (Частые Вопросы и Ответы) - /faq\
-                    \nСводка за неделю - /weeknews\
-                    \nСсылки - /links\
-                    \nОбратная связь - /feedback\
-                    \nКонтакты - /contacts\
-                    \nИзменение данных о себе - /edit_data\
-                    \Больше команд в боковом меню!\
-                    \n\nДля открытия этого меню - /menu')
-  else:
-    file = open('bug_reports.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(
-      message.chat.id,
-      'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
-    )
+  file = open('bug_reports.txt', 'a+', encoding='utf-8')
+  file.write('\n' + str(data))
+  bot.send_message(
+    message.chat.id,
+    'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
+  )
 
 
 @bot.message_handler(commands=['all_admin_panel'])
