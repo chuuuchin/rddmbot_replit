@@ -1300,7 +1300,7 @@ def donate(message):
 def edit_data(message):
   bot.send_message(
     message.chat.id, 'Выбери, что ты хочешь изменить:\
-                    \nИзменить номер - /edit_nickname\
+                    \nИзменить имя пользователя (@...) - /edit_nickname\
                     \nИзменить имя - /edit_name\
                     \nИзменить данные о себе - /edit_about\
                     \n\nДля возврата в меню - /menu')
