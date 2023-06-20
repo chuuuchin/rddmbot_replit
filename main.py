@@ -66,9 +66,9 @@ def register(message):
       file1 = open('education_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -92,9 +92,9 @@ def register(message):
       file1 = open('science_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -118,9 +118,9 @@ def register(message):
       file1 = open('profession_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -144,9 +144,9 @@ def register(message):
       file1 = open('culture_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -170,9 +170,9 @@ def register(message):
       file1 = open('volunteer_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -196,9 +196,9 @@ def register(message):
       file1 = open('patriotism_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -222,9 +222,9 @@ def register(message):
       file1 = open('sport_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -248,9 +248,9 @@ def register(message):
       file1 = open('healthyhealth_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -274,9 +274,9 @@ def register(message):
       file1 = open('media_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -300,9 +300,9 @@ def register(message):
       file1 = open('diplomacy_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -326,9 +326,9 @@ def register(message):
       file1 = open('ecology_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -352,9 +352,9 @@ def register(message):
       file1 = open('tourism_direction_boy.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('boys_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -411,9 +411,9 @@ def register(message):
       file1 = open('education_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -437,9 +437,9 @@ def register(message):
       file1 = open('science_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -463,9 +463,9 @@ def register(message):
       file1 = open('profession_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -489,9 +489,9 @@ def register(message):
       file1 = open('culture_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -515,9 +515,9 @@ def register(message):
       file1 = open('volunteer_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -541,9 +541,9 @@ def register(message):
       file1 = open('patriotism_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -567,9 +567,9 @@ def register(message):
       file1 = open('sport_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -593,9 +593,9 @@ def register(message):
       file1 = open('healthyhealth_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -619,9 +619,9 @@ def register(message):
       file1 = open('media_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -645,9 +645,9 @@ def register(message):
       file1 = open('diplomacy_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -671,9 +671,9 @@ def register(message):
       file1 = open('ecology_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
@@ -697,9 +697,9 @@ def register(message):
       file1 = open('tourism_direction_girl.txt', 'a+', encoding='utf-8')
       file1.write('\n' + str(data))
       file2 = open('girls_usernames.txt', 'a+', encoding='utf-8')
-      file2.write(str(message.from_user.username) + '\n')
+      file2.write('\n' + str(message.from_user.username))
       file3 = open('usernames.txt', 'a+', encoding='utf-8')
-      file3.write(str(message.from_user.username) + '\n')
+      file3.write('\n' + str(message.from_user.username))
       bot.send_sticker(
         message.chat.id,
         'CAACAgIAAxkBAAEIe1ZkLuPsUkhjaWJSgktAqOPtcyGeQwACdQADBc7CLbvpsgAB1nSKSy8E'
