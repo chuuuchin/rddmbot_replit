@@ -723,7 +723,7 @@ def login(message):
       break
   bot.send_message(
     message.chat.id,
-    'Если тебе не выпало сообщение об удачном входе, то ты ещё не зарегистрирован в боте. Выполни /start заново и зарегистрируйся.'
+    'Если тебе не выпало сообщение об удачном входе, то ты ещё не зарегистрирован в боте. Выполни /start заново и зарегистрируйся.\nОно выглядит так:\n\nГотово, ты вошёл в бота!'
   )
 
 @bot.message_handler(commands=['manual'])
@@ -827,7 +827,7 @@ def newfriends(message):
       temp = random.randint(0, len(array) - 1)
       bot.send_message(message.chat.id, array[temp])
       bot.send_message(message.chat.id, 'Можешь повторить поиск: /findboy')
-      bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+      bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['findgirl'])
     def findgirl(message):
@@ -837,7 +837,7 @@ def newfriends(message):
       temp = random.randint(0, len(array) - 1)
       bot.send_message(message.chat.id, array[temp])
       bot.send_message(message.chat.id, 'Можешь повторить поиск: /findgirl')
-      bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+      bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
   @bot.message_handler(commands=['interestsnewfriends'])
   def interestsnewfriends(message):
@@ -862,7 +862,7 @@ def newfriends(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findeducationboy) или девочку (/findeducationgirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findeducationboy'])
       def findeducationboy(message):
@@ -873,7 +873,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findeducationboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findeducationgirl'])
       def findeducationgirl(message):
@@ -884,14 +884,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findeducationgirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['science'])
     def science(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findscienceboy) или девочку (/findsciencegirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findscienceboy'])
       def findscienceboy(message):
@@ -902,7 +902,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findscienceboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findsciencgirl'])
       def findsciencegirl(message):
@@ -913,14 +913,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findsciencegirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['profession'])
     def profession(messgae):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findprofessionboy) или девочку (/findprofessiongirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findprofessionboy'])
       def findprofessionboy(message):
@@ -931,7 +931,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findprofessionboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findprofessiongirl'])
       def findprofessiongirl(message):
@@ -942,14 +942,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findprofessiongirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['culture'])
     def culture(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findcultureboy) или девочку (/findculturegirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findcultureboy'])
       def findcultureboy(message):
@@ -960,7 +960,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findcultureboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findculturegirl'])
       def findculturegirl(message):
@@ -971,14 +971,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findculturegirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['volunteer'])
     def volunteer(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findvolunteerboy) или девочку (/findvolunteergirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findvolunteerboy'])
       def findvolunteerboy(message):
@@ -989,7 +989,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findvolunteerboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findvolunteergirl'])
       def findvolunteergirl(message):
@@ -1000,14 +1000,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findvolunteergirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['patriotism'])
     def patriotism(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findpatriotismboy) или девочку (/findpatriotismgirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findpatriotismboy'])
       def findpatriotismboy(message):
@@ -1018,7 +1018,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findpatriotismboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findpatriotismgirl'])
       def findpatriotimgirl(message):
@@ -1029,14 +1029,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findpatriotismgirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['sport'])
     def sport(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findsportboy) или девочку (/findsportgirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findsportboy'])
       def findsportboy(message):
@@ -1047,7 +1047,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findsportboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findsportgirl'])
       def findsportgirl(message):
@@ -1058,14 +1058,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findsportgirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['healthyhealth'])
     def healthyhealth(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findhealthyhealthboy) или девочку (/findhealthyhealthgirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findhealthyhealthboy'])
       def findhealthyhealthboy(message):
@@ -1076,7 +1076,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findhealthyhealthboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findhealthyhealthgirl'])
       def findhealthyhealthgirl(message):
@@ -1087,14 +1087,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findhealthyhealthgirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['media'])
     def media(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findmediaboy) или девочку (/findmediagirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findmediaboy'])
       def findmediaboy(message):
@@ -1105,7 +1105,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findmediaboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findmediagirl'])
       def findmediagirl(message):
@@ -1116,14 +1116,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findmediagirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['diplomacy'])
     def diplomacy(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/finddiplomacyboy) или девочку (/finddiplomacygirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['finddiplomacyboy'])
       def finddiplomacyboy(message):
@@ -1134,7 +1134,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /finddiplomacyboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['finddiplomacygirl'])
       def finddiplomacygirl(message):
@@ -1145,14 +1145,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /finddiplomacygirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['ecology'])
     def ecology(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findecologyboy) или девочку (/findecologygirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findecologyboy'])
       def findecologyboy(message):
@@ -1163,7 +1163,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findecologyboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findecologygirl'])
       def findecologygirl(message):
@@ -1174,14 +1174,14 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findecologygirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['tourism'])
     def tourism(message):
       bot.send_message(
         message.chat.id,
         'Кого будем искать - мальчика (/findtourismboy) или девочку (/findtourismgirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findtourismboy'])
       def findtourismboy(message):
@@ -1192,7 +1192,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findtourismboy')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
       @bot.message_handler(commands=['findtourismgirl'])
       def findtourismgirl(message):
@@ -1203,7 +1203,7 @@ def newfriends(message):
         bot.send_message(message.chat.id, array[temp])
         bot.send_message(message.chat.id,
                          'Можешь повторить поиск: /findtourismgirl')
-        bot.send_message(message.chat.id, 'Для возврата в меню - /menu')
+        bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
 
   @bot.message_handler(commands=['anonymousnewfriends'])
   def anonymousnewfriends(message):
@@ -1213,6 +1213,8 @@ def newfriends(message):
     temp = random.randint(0, len(array) - 1)
     bot.send_message(message.chat.id,
                      'Вот ссылка на него/неё: ' + '@' + array[temp])
+    bot.send_message(message.chat.id, 'Для возврата в меню - /menu - или в меню знакомств - /newfriends')
+
 
 
 @bot.message_handler(commands=['faq'])
