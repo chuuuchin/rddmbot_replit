@@ -1153,10 +1153,13 @@ def createfq(message):
 
 def createfq1(message):
   data = message.text
-  file = open('new_fqs.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  bot.send_message(message.chat.id,
-                   'Готово! Скоро твой вопрос появится в списке!')
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('new_fqs.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    bot.send_message(message.chat.id,
+                     'Готово! Скоро твой вопрос появится в списке!')
 
 
 @bot.message_handler(commands=['info'])
@@ -1263,12 +1266,15 @@ def edit_data(message):
 
   def edit_nickname1(message):
     data = message.text
-    file = open('edit_nickname.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(
-      message.chat.id,
-      'Готово, после недолгой модерации твоё имя пользователя поменяется!\
-                      \n\nДля возврата в меню - /menu')
+    if data.startswith('/'):
+      bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+    else:
+      file = open('edit_nickname.txt', 'a+', encoding='utf-8')
+      file.write('\n' + str(data))
+      bot.send_message(
+        message.chat.id,
+        'Готово, после недолгой модерации твоё имя пользователя поменяется!\
+                        \n\nДля возврата в меню - /menu')
 
   @bot.message_handler(commands=['edit_name'])
   def edit_name(message):
@@ -1280,11 +1286,14 @@ def edit_data(message):
 
   def edit_name1(message):
     data = message.text
-    file = open('edit_name.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(
-      message.chat.id, 'Готово, после недолгой модерации твоё имя поменяется!\
-                      \n\nДля возврата в меню - /menu')
+    if data.startswith('/'):
+      bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+    else:
+      file = open('edit_name.txt', 'a+', encoding='utf-8')
+      file.write('\n' + str(data))
+      bot.send_message(
+        message.chat.id, 'Готово, после недолгой модерации твоё имя поменяется!\
+                        \n\nДля возврата в меню - /menu')
 
   @bot.message_handler(commands=['edit_about'])
   def edit_about(message):
@@ -1296,12 +1305,15 @@ def edit_data(message):
 
   def edit_about1(message):
     data = message.text
-    file = open('edit_about.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(
-      message.chat.id,
-      'Готово, после недолгой модерации данные о тебе поменяются!\
-                      \n\nДля возврата в меню - /menu')
+    if data.startswith('/'):
+      bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+    else:
+      file = open('edit_about.txt', 'a+', encoding='utf-8')
+      file.write('\n' + str(data))
+      bot.send_message(
+        message.chat.id,
+        'Готово, после недолгой модерации данные о тебе поменяются!\
+                        \n\nДля возврата в меню - /menu')
 
   @bot.message_handler(commands=['edit_direction'])
   def edit_direction(message):
@@ -1313,12 +1325,15 @@ def edit_data(message):
 
   def edit_direction1(message):
     data = message.text
-    file = open('edit_direction.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    bot.send_message(
-      message.chat.id,
-      'Готово, после недолгой модерации твои направления поменяются!\
-                      \n\nДля возврата в меню - /menu')
+    if data.startswith('/'):
+      bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+    else:
+      file = open('edit_direction.txt', 'a+', encoding='utf-8')
+      file.write('\n' + str(data))
+      bot.send_message(
+        message.chat.id,
+        'Готово, после недолгой модерации твои направления поменяются!\
+                        \n\nДля возврата в меню - /menu')
 
 
 @bot.message_handler(commands=['create_extra_profile'])
@@ -1332,13 +1347,16 @@ def create_extra_profile(message):
 
 def create_extra_profile1(message):
   data = message.text
-  file = open('extra_profiles.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  bot.send_message(
-    message.chat.id,
-    'Круто! Скоро твой профиль обновится! Если появятся какие-то вопросы, мы тебе напишем.'
-  )
-  bot.send_message(6220998434, data)
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('extra_profiles.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    bot.send_message(
+      message.chat.id,
+      'Круто! Скоро твой профиль обновится! Если появятся какие-то вопросы, мы тебе напишем.'
+    )
+    bot.send_message(6220998434, data)
 
 
 @bot.message_handler(commands=['ads'])
@@ -1373,34 +1391,43 @@ def createadsrequest(message):
 
 def createadsrequest2(message):
   data = message.text
-  file = open('ads_requests.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  username = bot.send_message(
-    messgae.chat.id,
-    'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
-  )
-  bot.register_next_step_handler(username, createadsrequest)
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('ads_requests.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    username = bot.send_message(
+      messgae.chat.id,
+      'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
+    )
+    bot.register_next_step_handler(username, createadsrequest)
 
 
 def createadsrequest3(message):
   data = message.text
-  file = open('ads_request.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  thought = bot.send_message(
-    message.chat.id,
-    'В следующем сообщении опиши свой проект - напиши название, суть и т.д.\nДля возврата в меню - /menu'
-  )
-  bot.register_next_step_handler(thought, createadsrequest4)
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('ads_request.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    thought = bot.send_message(
+      message.chat.id,
+      'В следующем сообщении опиши свой проект - напиши название, суть и т.д.\nДля возврата в меню - /menu'
+    )
+    bot.register_next_step_handler(thought, createadsrequest4)
 
 
 def createadsrequest4(message):
   data = message.text
-  file = open('ads_requests.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  username = bot.send_message(
-    message.chat.id,
-    'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
-  )
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('ads_requests.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    username = bot.send_message(
+      message.chat.id,
+      'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
+    )
 
 
 @bot.message_handler(commands=['createbugreport'])
@@ -1414,33 +1441,42 @@ def createbugreport(message):
 
 def createbugreport2(message):
   data = message.text
-  file = open('bug_reports.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  username = bot.send_message(
-    message.chat.id,
-    'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
-  )
-  bot.register_next_step_handler(username, createbugreport3)
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('bug_reports.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    username = bot.send_message(
+      message.chat.id,
+      'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
+    )
+    bot.register_next_step_handler(username, createbugreport3)
 
 
 def createbugreport3(message):
   data = message.text
-  file = open('bug_reports.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  bug = bot.send_message(
-    message.chat.id,
-    'В следующем сообщении опиши ошибку.\nДля возврата в меню - /menu')
-  bot.register_next_step_handler(bug, createbugreport4)
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('bug_reports.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    bug = bot.send_message(
+      message.chat.id,
+      'В следующем сообщении опиши ошибку.\nДля возврата в меню - /menu')
+    bot.register_next_step_handler(bug, createbugreport4)
 
 
 def createbugreport4(message):
   data = message.text
-  file = open('bug_reports.txt', 'a+', encoding='utf-8')
-  file.write('\n' + str(data))
-  bot.send_message(
-    message.chat.id,
-    'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
-  )
+  if data.startswith('/'):
+    bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
+  else:
+    file = open('bug_reports.txt', 'a+', encoding='utf-8')
+    file.write('\n' + str(data))
+    bot.send_message(
+      message.chat.id,
+      'Отлично! Скоро с тобой свяжется один из наших менеджеров!\nДля возврата в меню - /menu'
+    )
 
 
 @bot.message_handler(commands=['all_admin_panel'])
