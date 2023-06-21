@@ -817,7 +817,7 @@ def newfriends(message):
     bot.send_message(
       message.chat.id,
       'Кого будем искать - мальчика (/findboy) или девочку (/findgirl)?\
-                    \n\nДля возврата в меню - /menu')
+                    \n\nДля возврата в меню - /menu - или в меню знакомств - /newfriends')
 
     @bot.message_handler(commands=['findboy'])
     def findboy(message):
