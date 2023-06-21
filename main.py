@@ -1202,29 +1202,9 @@ def menu(message):
 
 @bot.message_handler(commands=['contacts'])
 def contacts(message):
-  bot.send_message(
-    message.chat.id,
-    'Тут контакты тех, к кому ты можешь обратиться по любому вопросу, они всегда помогут!\
-                    \n\nАнастасия Аксенова - комьюнити-менеджер сообщества - @hey_nastyaaa\
-                    \nАнастасия - @hey_nastyaaa\
-                    \nАнастасия Елецкая - старший комьюнити-менеджер - @EletskayaN\
-                    \nСевда Миралиева - координатор акселератора - @s_miralieva\
-                    \n\nКоманда Хранителей атмосферы чата:\
-                    \nМатвей - @MtBb11\
-                    \nСоня - @sonysska\
-                    \nVioletta - @Violettzzz\
-                    \nАрсений - @chelovek0125\
-                    \nСтас - @Vint_N\
-                    \nМария - @majezepr\
-                    \nИрада - @just_iradochka\
-                    \nНадежда - @Googbeste\
-                    \nАриша - @rinvilo\
-                    \n\nИ, конечно же, команда разработчиков бота:\
-                    \nДима - @chuuuchin\
-                    \nВика - @wisac\
-                    \nРегина - @rrrrrrega\
-                    \n\
-                    \n\nДля возврата в меню - /menu')
+  file = open('contacts.txt', 'r', encoding='utf-8')
+  bot.send_message(message.chat.id, *file)
+  file.close()
 
 
 @bot.message_handler(commands=['donate'])
