@@ -39,27 +39,30 @@ def register(message):
 
   def directionboy(message):
     data = message.text
-    file = open('boys_datas.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    file1 = open('datas.txt', 'a+', encoding='utf-8')
-    file1.write('\n' + str(data))
-    list_of = open('list_off.png', 'rb')
-    bot.send_photo(message.chat.id, list_of)
-    bot.send_message(
-      message.chat.id,
-      'Теперь определим направление. Выше я отправил список. Ознакомься с ним и выбери то, что тебе по душе:\
-    \n1. Образование и знания. Учись и познавай! - /educationdirectionboy\
-          \n2. Наука и технологии. Дерзай и открывай! - /sciencedirectionboy\
-          \n3. Труд, профессия и своё дело. Найди призвание! - /professiondirectionboy\
-          \n4. Культура и искусство. Создавай и вдохновляй! - /culturedirectionboy\
-          \n5. Волонтёрство и добровольчество. Благо твори! - /volunteerdirectionboy\
-          \n6. Патриотризм и историческая память. Служи отечеству! - /patriotismdirectionboy\
-          \n7. Спорт. Достигай и побеждай! - /sportdirectionboy\
-          \n8. Здоровый образ жизни. Будь здоров! - /healthyhealthdirectionboy\
-          \n9. Медиа и коммуникации. Расскажи о главном! - /mediadirectionboy\
-          \n10. Дипломатия и международные отношения. Умей дружить! - /diplomacydirectionboy\
-          \n11. Экология и охрана природы. Береги планету! - /ecologydirectionboy\
-          \n12. Туризм и путешествия. Открывай страну! - /tourismdirectionboy')
+    if '@' not in data:
+      bot.send_message(message.chat.id, 'Ты не ввёл своё имя пользователя. Пожалуйста, запусти регистрацию - /register - заново.')
+    else:
+      file = open('boys_datas.txt', 'a+', encoding='utf-8')
+      file.write('\n' + str(data))
+      file1 = open('datas.txt', 'a+', encoding='utf-8')
+      file1.write('\n' + str(data))
+      list_of = open('list_off.png', 'rb')
+      bot.send_photo(message.chat.id, list_of)
+      bot.send_message(
+        message.chat.id,
+        'Теперь определим направление. Выше я отправил список. Ознакомься с ним и выбери то, что тебе по душе:\
+      \n1. Образование и знания. Учись и познавай! - /educationdirectionboy\
+            \n2. Наука и технологии. Дерзай и открывай! - /sciencedirectionboy\
+            \n3. Труд, профессия и своё дело. Найди призвание! - /professiondirectionboy\
+            \n4. Культура и искусство. Создавай и вдохновляй! - /culturedirectionboy\
+            \n5. Волонтёрство и добровольчество. Благо твори! - /volunteerdirectionboy\
+            \n6. Патриотризм и историческая память. Служи отечеству! - /patriotismdirectionboy\
+            \n7. Спорт. Достигай и побеждай! - /sportdirectionboy\
+            \n8. Здоровый образ жизни. Будь здоров! - /healthyhealthdirectionboy\
+            \n9. Медиа и коммуникации. Расскажи о главном! - /mediadirectionboy\
+            \n10. Дипломатия и международные отношения. Умей дружить! - /diplomacydirectionboy\
+            \n11. Экология и охрана природы. Береги планету! - /ecologydirectionboy\
+            \n12. Туризм и путешествия. Открывай страну! - /tourismdirectionboy')
 
     @bot.message_handler(commands=['educationdirectionboy'])
     def educationdirectionboy(message):
@@ -371,28 +374,31 @@ def register(message):
 
   def directiongirl(message):
     data = message.text
-    file = open('girls_datas.txt', 'a+', encoding='utf-8')
-    file.write('\n' + str(data))
-    file1 = open('datas.txt', 'a+', encoding='utf-8')
-    file1.write('\n' + str(data))
-    list_of = open('list_off.png', 'rb')
-    bot.send_photo(message.chat.id, list_of)
-    bot.send_message(
-      message.chat.id,
-      'Теперь определим направление. Выше я отправил список. Ознакомься с ним и выбери то, что тебе по душе:\
-    \n1. Образование и знания. Учись и познавай! - /educationdirectiongirl\
-          \n2. Наука и технологии. Дерзай и открывай! - /sciencedirectiongirl\
-          \n3. Труд, профессия и своё дело. Найди призвание! - /professiondirectiongirl\
-          \n4. Культура и искусство. Создавай и вдохновляй! - /culturedirectiongirl\
-          \n5. Волонтёрство и добровольчество. Благо твори! - /volunteerdirectiongirl\
-          \n6. Патриотризм и историческая память. Служи отечеству! - /patriotismdirectiongirl\
-          \n7. Спорт. Достигай и побеждай! - /sportdirectiongirl\
-          \n8. Здоровый образ жизни. Будь здоров! - /healthyhealthdirectiongirl\
-          \n9. Медиа и коммуникации. Расскажи о главном! - /mediadirectiongirl\
-          \n10. Дипломатия и международные отношения. Умей дружить! - /diplomacydirectiongirl\
-          \n11. Экология и охрана природы. Береги планету! - /ecologydirectiongirl\
-          \n12. Туризм и путешествия. Открывай страну! - /tourismdirectiongirl'
-    )
+    if '@' not in data:
+      bot.send_message(message.chat.id, 'Ты не ввёла своё имя пользователя. Пожалуйста, запусти регистрацию - /register - заново.')
+    else:
+      file = open('girls_datas.txt', 'a+', encoding='utf-8')
+      file.write('\n' + str(data))
+      file1 = open('datas.txt', 'a+', encoding='utf-8')
+      file1.write('\n' + str(data))
+      list_of = open('list_off.png', 'rb')
+      bot.send_photo(message.chat.id, list_of)
+      bot.send_message(
+        message.chat.id,
+        'Теперь определим направление. Выше я отправил список. Ознакомься с ним и выбери то, что тебе по душе:\
+      \n1. Образование и знания. Учись и познавай! - /educationdirectiongirl\
+            \n2. Наука и технологии. Дерзай и открывай! - /sciencedirectiongirl\
+            \n3. Труд, профессия и своё дело. Найди призвание! - /professiondirectiongirl\
+            \n4. Культура и искусство. Создавай и вдохновляй! - /culturedirectiongirl\
+            \n5. Волонтёрство и добровольчество. Благо твори! - /volunteerdirectiongirl\
+            \n6. Патриотризм и историческая память. Служи отечеству! - /patriotismdirectiongirl\
+            \n7. Спорт. Достигай и побеждай! - /sportdirectiongirl\
+            \n8. Здоровый образ жизни. Будь здоров! - /healthyhealthdirectiongirl\
+            \n9. Медиа и коммуникации. Расскажи о главном! - /mediadirectiongirl\
+            \n10. Дипломатия и международные отношения. Умей дружить! - /diplomacydirectiongirl\
+            \n11. Экология и охрана природы. Береги планету! - /ecologydirectiongirl\
+            \n12. Туризм и путешествия. Открывай страну! - /tourismdirectiongirl'
+      )
 
     @bot.message_handler(commands=['educationdirectiongirl'])
     def educationdirectiongirl(message):
@@ -738,7 +744,67 @@ def manual_stage_3(message):
 \n- А что делать, если не знаешь, кому именно написать?\
 \n- Здесь тебе поможет следующая функция «Обратная связь»\
 \n«Обратная связь», пригодится в случаях, если возникает срочный вопрос, но ты не хочешь беспокоить человека в личных сообщениях. Ты можешь отправить Яндекс.Форму со своей проблемой, и те, кто занимаются ботом, тебе ответят!')
-  bot.send_message(message.chat.id, 'Завершить - /start\nВернуться назад - /manual_stage_2') 
+  bot.send_message(message.chat.id, 'Продолжить - /manual_stage_4\nВернуться назад - /manual_stage_2\nВыйти - /start')
+@bot.message_handler(commands=['manual_stage_4'])
+def manual_stage_4(message):
+  bot.send_message(message.chat.id, 'И так, в меню мы дошли до следующей функции - функции изменения данных аккаунта. Как понятно по названию, она изменяет данные в акаунте, но у тебя нет аккаунта! Надо его создать, а это значит, что мы подошли к концу, и мы должны прощаться, но для начала твоей жизни в боте ты должен посмотреть видео (https://vk.com/wall-220973423_1) или текст (https://t.me/firstsmovementnews/19) в наших социальных сетях!\n\nВернуться назад - /manual_stage_3\nВыйти - /start')
+
+@bot.message_handler(commands=['demo', 'menu_demo'])
+def demo(message):
+  bot.send_message(message.chat.id, 'Выбирай, куда отправимся:\
+                    \nНовые знакомства - /newfriends_demo\
+                    \nЧаВО (Частые Вопросы и Ответы) - /faq_demo\
+                    \nСсылки - /links_demo\
+                    \nКонтакты - /contacts_demo\
+                    \n\nДля открытия этого меню - /menu_demo\
+                    \nДля выхода из демо-режима - /start')
+@bot.message_handler(commands=['newfriends_demo'])
+def newfriends_demo(message):
+  bot.send_message(message.chat.id, 'Найдено новое знакомство - Дмитрий, м, 14 лет, увлекаюсь программированием, живу в Яндекс.Лицее, @chuuuchin\nЧтобы увидеть другие знакомства, зарегистрируйся!\n\nДля возврата в меню - /menu_demo')
+
+@bot.message_handler(commands=['faq_demo'])
+def faq_demo(message):
+  bot.send_message(
+    message.chat.id,
+    '1. В: Что делать, если у меня неполадки с ботом?\nО: Писать менеджерам, вот их контакты: @wisac, @rrrrrrega, @nyusha_tsukiri.\
+  \n\n2. В: Где можно посмотреть новые проекты Движения?\nО: Новые проекты Движения можно посмотреть тут: будьвдвижении.рф.\
+  \n\n3. В: Как искать новых друзей?\nО: Найти друзей можно через команду /new_friends. Там ты сможешь выбрать, как именно искать друзей: анонимно, по полу или по интересам.\
+  \n\n4. В: Как поменять информацию о себе?\nО: Для этого вызови функцию /edit_data и выбери, что именно ты хочешь поменять.\
+                    \n\nДля возврата в меню - /menu_demo')
+
+@bot.message_handler(commands=['links_demo'])
+def links_demo(message):
+  bot.send_message(
+    message.chat.id, 'Основной чат "РДДМ Москва" - https://t.me/rddm_moscow\
+                    \nОфициальный канал "Движения Первых" - https://t.me/rddm_official\
+                    \nОфициальное сообщество ВК - https://vk.com/rddm_official\
+                    \nПравила чата - https://t.me/rddm_moscow/59286\
+                    \nВступить в Движение - https://будьвдвижении.рф/\
+                    \n\nДля возврата в меню - /menu_demo')
+
+@bot.message_handler(commands=['contacts_demo'])
+def contacts_demo(message):
+  bot.send_message(message.chat.id, 'Тут контакты тех, к кому ты можешь обратиться по любому вопросу, они всегда помогут!\
+                    \n\nАнастасия Аксенова - комьюнити-менеджер сообщества - @hey_nastyaaa\
+                    \nАнастасия Елецкая - старший комьюнити-менеджер - @EletskayaN\
+                    \nСевда Миралиева - координатор акселератора - @s_miralieva\
+                    \n\nКоманда Хранителей атмосферы чата:\
+                    \nМатвей - @MtBb11\
+                    \nСоня - @sonysska\
+                    \nVioletta - @Violettzzz\
+                    \nАрсений - @chelovek0125\
+                    \nМария - @majezepr\
+                    \nИрада - @just_iradochka\
+                    \nНадежда - @Googbeste\
+                    \nАриша - @rinvilo\
+                    \n\nИ, конечно же, команда разработчиков бота:\
+                    \nДима - разработчик бота - @chuuuchin\
+                    \nВика - старший администратор - @wisac\
+                    \nРегина - менеджер - @rrrrrrega\
+                    \nМатвей - @MtBb11\
+                    \n\
+                    \n\nДля возврата в меню - /menu_demo')
+
 @bot.message_handler(commands=['newfriends'])
 def newfriends(message):
   bot.send_message(
