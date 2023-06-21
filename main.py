@@ -720,7 +720,24 @@ def login(message):
     'Если тебе не выпало сообщение об удачном входе, то ты ещё не зарегистрирован в боте. Выполни /start заново и зарегистрируйся.'
   )
 
-
+@bot.message_handler(commands=['manual'])
+def manual(message):
+  bot.send_message(message.chat.id, 'Тут мы расскажем тебе, как правильно пользоваться ботом.\nГотов? Тогда нажимай /start_manual и поехали!\n\nВернуться в начало - /start.')
+@bot.message_handler(commands=['start_manual', 'manual_stage_1'])
+def start_manual(message):
+  bot.send_message(message.chat.id, 'Привет! Это обучалка первобота, где, как в путешествии, показаны интересные функции этого бота. В первую очередь мы с тобой отправимся на функцию «Новые знакомства».')
+  bot.send_message(message.chat.id, 'Продолжить - /manual_stage_2\nВыйти - /start')
+@bot.message_handler(commands=['manual_stage_2'])
+def manual_stage_2(message):
+  bot.send_message(message.chat.id, '«Новые знакомства» - функция, где ты можешь найти себе новых знакомых, хоть это и понятно по названию, не так ли?')
+  bot.send_message(message.chat.id, 'Найдено новое знакомство, интересно, кто это? А, так это Администрация Первобота, которая всегда поможет тебе разобраться в баге или в проблеме, связанной с ботом. Состав администрации ты узнаешь в другой функции «Контакты»!')
+  bot.send_message(message.chat.id, 'Продолжить - /manual_stage_3\nВернуться назад - /manual_stage_1\nВыйти - /start')
+@bot.message_handler(commands=['manual_stage_3'])
+def manual_stage_3(message):
+  bot.send_message(message.chat.id, 'Приступим к функции «Контакты» - здесь ребята, которые, как и сказано мной ранее, всегда придут тебе на помощь!\
+\n- А что делать, если не знаешь, кому именно написать?\
+\n- Здесь тебе поможет следующая функция «Обратная связь»\
+\n«Обратная связь», пригодится в случаях, если возникает срочный вопрос, но ты не хочешь беспокоить человека в личных сообщениях. Ты можешь отправить Яндекс.Форму со своей проблемой, и те, кто занимаются ботом, тебе ответят!')  
 @bot.message_handler(commands=['newfriends'])
 def newfriends(message):
   bot.send_message(
