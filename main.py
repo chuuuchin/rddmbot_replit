@@ -723,7 +723,7 @@ def login(message):
       break
   bot.send_message(
     message.chat.id,
-    'Если тебе не выпало сообщение об удачном входе, то ты ещё не зарегистрирован в боте. Выполни /start заново и зарегистрируйся.\nОно выглядит так:\n\n<b>Готово, ты вошёл в бота!</b>', parse_mode=telegram.ParseMode.HTML)
+    '<p>Если тебе не выпало сообщение об удачном входе, то ты ещё не зарегистрирован в боте. Выполни /start заново и зарегистрируйся.\nОно выглядит так:\n\n<b>Готово, ты вошёл в бота!</b></p>', parse_mode=telegram.ParseMode.HTML)
 
 @bot.message_handler(commands=['manual'])
 def manual(message):
