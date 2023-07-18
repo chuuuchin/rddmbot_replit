@@ -368,7 +368,7 @@ def register(message):
   def girl(message):
     bio = bot.send_message(
       message.chat.id,
-      'В следующем сообщении напиши о себе и своё имя пользователя (@...). Только пожалуйста, без всяких переносов строк. Ты же не хочешь, чтобы твои данные смешались с другими?\nВот пример: "Дмитрий, м, 14 лет, увелкаюсь программированием, живу в Яндекс.Лицее, @chuuuchin"'
+      'В следующем сообщении напиши о себе и своё имя пользователя (@chuuuchin). Только пожалуйста, без всяких переносов строк. Ты же не хочешь, чтобы твои данные смешались с другими?\nВот пример: "Дмитрий, м, 14 лет, увелкаюсь программированием, живу в Яндекс.Лицее, @chuuuchin"'
     )
     bot.register_next_step_handler(bio, directiongirl)
 
@@ -727,26 +727,26 @@ def login(message):
 
 @bot.message_handler(commands=['manual'])
 def manual(message):
-  bot.send_message(message.chat.id, 'Тут мы расскажем тебе, как правильно пользоваться ботом.\nГотов? Тогда нажимай /start_manual и поехали!\n\nВернуться в начало - /start.')
+  bot.send_message(message.chat.id, 'Тут мы расскажем тебе, как пользоваться ботом.\nГотов? Тогда нажимай /start_manual и поехали!\n\nВернуться в начало - /start.')
 @bot.message_handler(commands=['start_manual', 'manual_stage_1'])
 def start_manual(message):
-  bot.send_message(message.chat.id, 'Привет! Это обучалка первобота, где, как в путешествии, показаны интересные функции этого бота. В первую очередь мы с тобой отправимся на функцию «Новые знакомства».')
+  bot.send_message(message.chat.id, 'Привет! Это обучалка первобота, где, как в путешествии, показаны интересные функции этого бота. В первую очередь мы с тобой переходим к функции «Новые знакомства».')
   bot.send_message(message.chat.id, 'Продолжить - /manual_stage_2\nВыйти - /start')
 @bot.message_handler(commands=['manual_stage_2'])
 def manual_stage_2(message):
-  bot.send_message(message.chat.id, '«Новые знакомства» - функция, где ты можешь найти себе новых знакомых, хоть это и понятно по названию, не так ли?')
-  bot.send_message(message.chat.id, 'Найдено новое знакомство, интересно, кто это? А, так это Администрация Первобота, которая всегда поможет тебе разобраться в баге или в проблеме, связанной с ботом. Состав администрации ты узнаешь в другой функции «Контакты»!')
+  bot.send_message(message.chat.id, '«Новые знакомства» - функция, где ты можешь найти себе новых знакомых.')
+  bot.send_message(message.chat.id, 'Найдено новое знакомство, интересно, кто это? А, так это "Дмитрий, создатель этого бота, учусь в Яндекс.Лицее, @chuuuchin", которая всегда поможет тебе разобраться в баге или в проблеме, связанной с ботом. Состав администрации ты узнаешь в другой функции «Контакты»!')
   bot.send_message(message.chat.id, 'Продолжить - /manual_stage_3\nВернуться назад - /manual_stage_1\nВыйти - /start')
 @bot.message_handler(commands=['manual_stage_3'])
 def manual_stage_3(message):
-  bot.send_message(message.chat.id, 'Приступим к функции «Контакты» - здесь ребята, которые, как и сказано мной ранее, всегда придут тебе на помощь!\
-\n- А что делать, если не знаешь, кому именно написать?\
-\n- Здесь тебе поможет следующая функция «Обратная связь»\
-\n«Обратная связь», пригодится в случаях, если возникает срочный вопрос, но ты не хочешь беспокоить человека в личных сообщениях. Ты можешь отправить Яндекс.Форму со своей проблемой, и те, кто занимаются ботом, тебе ответят!')
+  bot.send_message(message.chat.id, 'Приступим к функции «Контакты» - здесь ребята, которые всегда придут тебе на помощь!\
+\n- А что делать, если я не знаю, кому именно писать?\
+\n- Здесь тебе поможет следующая функция «Обратная связь» - /feedback')
+  bot.send_message(message.chat.id, '«Обратная связь» пригодится, если возникает срочный вопрос. Ты можешь отправить Яндекс.Форму со своей проблемой, тебе обязательно ответят!')
   bot.send_message(message.chat.id, 'Продолжить - /manual_stage_4\nВернуться назад - /manual_stage_2\nВыйти - /start')
 @bot.message_handler(commands=['manual_stage_4'])
 def manual_stage_4(message):
-  bot.send_message(message.chat.id, 'И так, в меню мы дошли до следующей функции - функции изменения данных аккаунта. Как понятно по названию, она изменяет данные в акаунте, но у тебя нет аккаунта! Надо его создать, а это значит, что мы подошли к концу, и мы должны прощаться, но для начала твоей жизни в боте ты должен посмотреть видео (https://vk.com/wall-220973423_1) или текст (https://t.me/firstsmovementnews/19) в наших социальных сетях!\n\nВернуться назад - /manual_stage_3\nВыйти - /start')
+  bot.send_message(message.chat.id, 'Чтобы изменить данные об аккаунте пожалуйста, зарегистрируйтесь, чтобы воспользоваться данной функцией. Перед началом работы с ботом, советую посмотреть видео (https://vk.com/wall-220973423_1) или текстом (https://t.me/firstsmovementnews/19) в наших социальных сетях для более полного понимания возможностей бота.\n\nВернуться назад - /manual_stage_3\nВыйти - /start')
 
 @bot.message_handler(commands=['demo', 'menu_demo'])
 def demo(message):
@@ -766,7 +766,7 @@ def faq_demo(message):
   bot.send_message(
     message.chat.id,
     '1. В: Что делать, если у меня неполадки с ботом?\nО: Писать менеджерам, вот их контакты: @wisac, @rrrrrrega, @nyusha_tsukiri.\
-  \n\n2. В: Где можно посмотреть новые проекты Движения?\nО: Новые проекты Движения можно посмотреть тут: будьвдвижении.рф.\
+  \n\n2. В: Где можно посмотреть новые проекты Движения?\nО: Следи за обновлениями и новыми проектами Движения можно в нашем чате движения первых: будьвдвижении.рф.\
   \n\n3. В: Как искать новых друзей?\nО: Найти друзей можно через команду /new_friends. Там ты сможешь выбрать, как именно искать друзей: анонимно, по полу или по интересам.\
   \n\n4. В: Как поменять информацию о себе?\nО: Для этого вызови функцию /edit_data и выбери, что именно ты хочешь поменять.\
                     \n\nДля возврата в меню - /menu_demo')
@@ -774,7 +774,7 @@ def faq_demo(message):
 @bot.message_handler(commands=['links_demo'])
 def links_demo(message):
   bot.send_message(
-    message.chat.id, 'Основной чат "РДДМ Москва" - https://t.me/rddm_moscow\
+    message.chat.id, 'Основной чат "Движение первых Москва" - https://t.me/rddm_moscow\
                     \nОфициальный канал "Движения Первых" - https://t.me/rddm_official\
                     \nОфициальное сообщество ВК - https://vk.com/rddm_official\
                     \nПравила чата - https://t.me/rddm_moscow/59286\
@@ -793,7 +793,6 @@ def contacts_demo(message):
                     \nVioletta - @Violettzzz\
                     \nАрсений - @chelovek0125\
                     \nМария - @majezepr\
-                    \nИрада - @just_iradochka\
                     \nНадежда - @Googbeste\
                     \nАриша - @rinvilo\
                     \n\nИ, конечно же, команда разработчиков бота:\
@@ -1231,7 +1230,7 @@ def faq(message):
 def createfq(message):
   newfq = bot.send_message(
     message.chat.id,
-    'В следующем сообщении отправь вопрос, который должен появиться в списке, и ответ на него.\nДля возврата в меню - /menu'
+    'В следующем сообщении отправь вопрос, который должен появиться в списке.\nДля возврата в меню - /menu'
   )
   bot.register_next_step_handler(newfq, createfq1)
 
@@ -1258,7 +1257,7 @@ def info(message):
 @bot.message_handler(commands=['links'])
 def links(message):
   bot.send_message(
-    message.chat.id, 'Основной чат "РДДМ Москва" - https://t.me/rddm_moscow\
+    message.chat.id, 'Основной чат "Движение первых Москва" - https://t.me/rddm_moscow\
                     \nОфициальный канал "Движения Первых" - https://t.me/rddm_official\
                     \nОфициальное сообщество ВК - https://vk.com/rddm_official\
                     \nПравила чата - https://t.me/rddm_moscow/59286\
@@ -1333,9 +1332,17 @@ def donate(message):
 
 
 @bot.message_handler(commands=['edit_data'])
-def edit_data(message):
-  bot.send_message(
-    message.chat.id, 'Выбери, что ты хочешь изменить:\
+def edit_data(message):\
+  username = message.from_user.username
+  temp = ''
+  f = open('datas.txt', 'r') 
+  line = f.read() 
+  array = line.split('\n') 
+  for i in array: 
+    if username in i:
+      temp = i
+  bot.send_message(message.chat.id, temp)
+  bot.send_message(message.chat.id,'Выбери, что ты хочешь изменить:\
                     \nИзменить имя пользователя (@...) - /edit_nickname\
                     \nИзменить имя - /edit_name\
                     \nИзменить данные о себе - /edit_about\
@@ -1482,7 +1489,7 @@ def createadsrequest2(message):
     file = open('ads_requests.txt', 'a+', encoding='utf-8')
     file.write('\n' + str(data))
     username = bot.send_message(
-      messgae.chat.id,
+      message.chat.id,
       'Теперь отправь своё имя пользователя в ТГ (@...)\nДля возврата в меню - /menu'
     )
     bot.register_next_step_handler(username, createadsrequest)
@@ -1492,7 +1499,7 @@ def createadsrequest3(message):
   data = message.text
   if data.startswith('/'):
     bot.send_message(message.chat.id, 'Это команда, а не текст. Или запусти исходную команду, или новую.')
-  else:
+  if data.startswith('@'):
     file = open('ads_request.txt', 'a+', encoding='utf-8')
     file.write('\n' + str(data))
     thought = bot.send_message(
@@ -1500,6 +1507,8 @@ def createadsrequest3(message):
       'В следующем сообщении опиши свой проект - напиши название, суть и т.д.\nДля возврата в меню - /menu'
     )
     bot.register_next_step_handler(thought, createadsrequest4)
+  else:
+    bot.send_message(message.chat.id, 'Это обычный текст, а не имя пользователя. Или запусти исходную команду, или новую.')
 
 
 def createadsrequest4(message):
