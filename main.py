@@ -1332,7 +1332,7 @@ def donate(message):
 
 
 @bot.message_handler(commands=['edit_data'])
-def edit_data(message):\
+def edit_data(message):
   username = message.from_user.username
   temp = ''
   f = open('datas.txt', 'r') 
